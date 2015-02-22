@@ -1,0 +1,25 @@
+.jumbotron {
+    background-color: #333;
+}
+
+.jumbotron h1 {
+    color: #EEE;
+}
+
+.jumbotron p {
+    color: #DDD;
+}
+
+.nav {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.nav a {
+    color: #EEE;
+}
+
+.nav li a:hover {
+    background-color: #666;
+}
