@@ -1,5 +1,10 @@
+body{
+    background: #f9f9f9
+}
+
 .jumbotron {
     background-color: #333;
+    position: relative;
 }
 
 .jumbotron h1 {
@@ -18,18 +23,118 @@
 
 .nav a {
     color: #EEE;
+    border-radius: 5px 5px 0px 0px;
 }
 
 .nav li a:hover {
     background-color: #666;
 }
 
+#services {
+    margin-bottom: 60px;
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 4em;
+    letter-spacing: -2px;
+    font-weight: 700;
+    color: #444;
+}
+
+.section-sub-heading {
+    text-align: center;
+    font-size: 1em;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #828282;
+    text-transform: uppercase;
+}
+
+.service h3:after {
+    content: '';
+    width: 40px;
+    height: 1px;
+    background: #dee8ed;
+    left: 50%;
+    margin-left: -20px;
+    position: absolute;
+    bottom: 67px;
+}
+
+ .section-heading-parent {
+    margin-bottom: 30px;
+}
+
+#services .service {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    padding: 30px 15px 30px;
+    text-align: center;
+    background: white;
+}
+
+#services .service h3{
+    font-size: 1.2em;
+    font-weight: bolder;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+#services .service div{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    height: 50px;
+    background: black;
+}
+
+#services .service p{
+    font-size: 13px;
+    color: #333;
+}
+
+#ninjas {
+    background: white;
+}
+
+#ninjas img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+}
+
+#ninjas .ninja{
+    padding: 30px 15px 30px;
+    text-align: center;
+    background: white;
+}
+
+#ninjas .ninja p{
+    font-size: 13px;
+    color: #333;
+}
 
 @media only screen
-and (min-device-width : 320px)
-and (max-device-width : 600px) {
-    .nav-pills>li {
+and (max-width : 775px){
+    .nav {
+        margin-right: 0px !important;
+    }
+
+    .nav li {
         float: none !important;
+    }
+
+}
+
+@media only screen
+and (min-width : 775px){
+    .nav {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        font-size: 20px;
     }
 }
 
